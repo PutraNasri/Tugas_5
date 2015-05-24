@@ -1,9 +1,11 @@
 package maps.elektro.com.tugas_5;
 
-import android.support.v7.app.ActionBarActivity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -35,5 +37,12 @@ public class MainActivity extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+    public void pesan(View view){
+        String namaStr = "WELCOME";
+
+        Intent intentTampil = new Intent(this,MainActivity2Activity.class);
+        intentTampil.putExtra("namaStr", namaStr);
+        startActivity(intentTampil);
     }
 }

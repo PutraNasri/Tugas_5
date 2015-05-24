@@ -7,7 +7,7 @@
 
     <TextView android:text="@string/hello_world" android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/textView"
+        android:id="@+id/nama"
         android:textAlignment="center"
         android:textColor="#ff928121"
         android:layout_alignParentTop="true"
@@ -16,9 +16,10 @@
     <ImageButton
         android:layout_width="600dp"
         android:layout_height="250dp"
-        android:id="@+id/imageButton"
+        android:id="@+id/gambar"
         android:src="@drawable/pintu"
         android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:onClick="pesan" />
 
 </RelativeLayout>
